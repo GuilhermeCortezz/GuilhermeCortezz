@@ -7,7 +7,7 @@
 I’m currently an undergraduate student in Analysis and Systems Development (ADS) at IFRS and have experience in both backend and frontend development. I primarily work with TypeScript, Python, PHP, React, Node.js, and Java, and I'm always learning new technologies. I also have a keen interest in **cybersecurity**.
 
 <div id="header" align="center">
-  <img src="https://private-user-images.githubusercontent.com/74038190/371756373-fddcdbcd-5ea2-4416-9f59-ca7fd9394aca.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE3MDQ0NTQsIm5iZiI6MTc0MTcwNDE1NCwicGF0aCI6Ii83NDAzODE5MC8zNzE3NTYzNzMtZmRkY2RiY2QtNWVhMi00NDE2LTlmNTktY2E3ZmQ5Mzk0YWNhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzExVDE0NDIzNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUzODQ0ZmJlMzEwM2YyN2Y4ZTcxOWE2Nzg0NzdkNjM5Mjk4ZWI1NjQzZjllNmZmODNhNjllNTRiMmEwNTQ2ZGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.3iDY_8uEgzMT-ZBBIeDmwylUykxFj978MivE3SJtsYA" width="350"/>
+  <img src="https://github.com/user-attachments/assets/fddcdbcd-5ea2-4416-9f59-ca7fd9394aca" width="300"/>
 </div>
 
 </div>
@@ -38,7 +38,7 @@ I’m currently an undergraduate student in Analysis and Systems Development (AD
 <div align="center">
   <a href="https://github.com/GuilhermeCortezz">
     <img height="150em" src="https://github-readme-stats.vercel.app/api?username=GuilhermeCortezz&show_icons=true&theme=dark&include_all_commits=true&count_private=true" />
-    <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GuilhermeCortezz&layout=compact&theme=dark" />
+    <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=GuilhermeCortezz&layout=compact&theme=dark&include_all_commits=true&count_private=true" />
   </a>
 </div>
 
@@ -57,3 +57,9 @@ I’m currently an undergraduate student in Analysis and Systems Development (AD
   <a href="https://www.linkedin.com/in/guilherme-oliveira-cortez/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
   <a href="mailto:gui200cortez@gmail.com"><img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
 </div>
+
+---
+
+<hr>
+
+![Snake animation Contribution Graph](https://raw.githubusercontent.com/GuilhermeCortezz/GuilhermeCortezz/output/github-contribution-grid-snake-dark.svg)
