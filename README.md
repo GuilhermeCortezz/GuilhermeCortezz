@@ -7,7 +7,7 @@
 I’m currently an undergraduate student in Analysis and Systems Development (ADS) at IFRS and have experience in both backend and frontend development. I primarily work with TypeScript, Python, PHP, React, Node.js, and Java, and I'm always learning new technologies. I also have a keen interest in **cybersecurity**.
 
 <div id="header" align="center">
-  <img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" width="250"/>
+  <img src="https://private-user-images.githubusercontent.com/74038190/371756373-fddcdbcd-5ea2-4416-9f59-ca7fd9394aca.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDE3MDQ0NTQsIm5iZiI6MTc0MTcwNDE1NCwicGF0aCI6Ii83NDAzODE5MC8zNzE3NTYzNzMtZmRkY2RiY2QtNWVhMi00NDE2LTlmNTktY2E3ZmQ5Mzk0YWNhLmdpZj9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAzMTElMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMzExVDE0NDIzNFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWUzODQ0ZmJlMzEwM2YyN2Y4ZTcxOWE2Nzg0NzdkNjM5Mjk4ZWI1NjQzZjllNmZmODNhNjllNTRiMmEwNTQ2ZGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.3iDY_8uEgzMT-ZBBIeDmwylUykxFj978MivE3SJtsYA" width="250"/>
 </div>
 
 </div>
