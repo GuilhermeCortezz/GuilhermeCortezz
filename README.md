@@ -38,6 +38,7 @@ I’m currently an undergraduate student in Analysis and Systems Development (AD
 <div align="center">
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=GuilhermeCortezz&layout=compact)](https://github.com/GuilhermeCortezz/github-readme-stats)
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=GuilhermeCortezz&layout=compact&include_all_commits=true&count_private=true)](https://github.com/GuilhermeCortezz/github-readme-stats)
 
 </div>
 
