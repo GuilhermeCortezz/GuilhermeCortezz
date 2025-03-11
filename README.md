@@ -60,6 +60,8 @@ I’m currently an undergraduate student in Analysis and Systems Development (AD
 
 ---
 
-<hr>
+<div align="center">
 
-![Snake animation Contribution Graph](https://github.com/GuilhermeCortezz/GuilhermeCortezz/blob/output/github-contribution-grid-snake.svg)
+![Snake animation Contribution Graph](https://github.com/GuilhermeCortezz/GuilhermeCortezz/blob/output/github-snake-dark.svg)
+
+</div>
