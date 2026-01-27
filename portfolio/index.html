@@ -3,25 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guilherme Cortez - Desenvolvedor Full Stack</title>
+    <meta name="description" content="Guilherme Cortez - Desenvolvedor Full Stack especializado em aplicações web, mobile, DevOps e integração de sistemas">
+    <meta name="keywords" content="desenvolvedor, full stack, react, node.js, devops, docker">
+    <title>Guilherme Cortez | Desenvolvedor Full Stack & DevOps</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <h2>Guilherme Cortez</h2>
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">Cortez</span>
+                <span class="logo-bracket">/&gt;</span>
             </div>
             <div class="nav-menu" id="nav-menu">
-                <a href="#home" class="nav-link">Início</a>
+                <a href="#home" class="nav-link active">Início</a>
                 <a href="#about" class="nav-link">Sobre</a>
-                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#skills" class="nav-link">Skills</a>
                 <a href="#experience" class="nav-link">Experiência</a>
                 <a href="#education" class="nav-link">Formação</a>
                 <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="btn btn-nav">Contato</a>
             </div>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
@@ -33,273 +46,728 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-bg-animation">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+            <div class="gradient-sphere sphere-3"></div>
+        </div>
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>Olá, eu sou <span class="highlight">Guilherme Cortez!</span></h1>
-                    <h2>Desenvolvedor Full Stack</h2>
-                    <p>Desenvolvedor de software com experiência em aplicações web e mobile, integrações com APIs, sistemas de pagamento, ERPs e automações para otimizar vendas e controle de estoque. Busco novos desafios com foco em inovação e impacto real nos negócios.</p>
+                    <div class="hero-badge">
+                        <span class="status-dot"></span>
+                        Disponível para novos projetos
+                    </div>
+                    <h1>
+                        <span class="greeting">Olá, eu sou</span>
+                        <span class="name-highlight">Guilherme Cortez</span>
+                    </h1>
+                    <div class="role-container">
+                        <span class="role-prefix">// </span>
+                        <span class="typed-role" id="typed-role"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Desenvolvedor Full Stack com sólida experiência em <strong>aplicações web e mobile</strong>, 
+                        <strong>integração de ecossistemas complexos</strong> (APIs, ERPs e sistemas de pagamento) 
+                        e <strong>DevOps</strong>. Foco em criar soluções escaláveis que geram impacto direto 
+                        na eficiência operacional e nos resultados de negócios.
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Anos de Experiência</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Tecnologias</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-item">
+                            <span class="stat-number">∞</span>
+                            <span class="stat-label">Vontade de Aprender</span>
+                        </div>
+                    </div>
                     <div class="hero-buttons">
-                        <a href="#contact" class="btn btn-primary">Entre em Contato</a>
-                        <a href="#about" class="btn btn-secondary">Saiba Mais</a>
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Vamos Conversar</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#experience" class="btn btn-secondary">
+                            <span>Ver Projetos</span>
+                        </a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="https://www.linkedin.com/in/guilherme-oliveira-cortez/" target="_blank" class="social-icon" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/GuilhermeCortezz" target="_blank" class="social-icon" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:gui200cortez@gmail.com" class="social-icon" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-user"></i>
-                        <img src="./foto.png" alt="Guilherme Cortez" style="width: 300px; height: 300px; border-radius: 50%; object-fit: cover;">
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-image-wrapper">
+                            <div class="profile-ring"></div>
+                            <img src="./foto.jpg" alt="Guilherme Cortez" class="profile-image">
+                        </div>
+                        <div class="floating-badge badge-react">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="floating-badge badge-node">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="floating-badge badge-docker">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="floating-badge badge-git">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                    </div>
+                    <div class="code-snippet">
+                        <div class="code-header">
+                            <span class="code-dot red"></span>
+                            <span class="code-dot yellow"></span>
+                            <span class="code-dot green"></span>
+                            <span class="code-title">developer.ts</span>
+                        </div>
+                        <pre class="code-content"><code><span class="keyword">const</span> <span class="variable">developer</span> = {
+  <span class="property">name</span>: <span class="string">"Guilherme Cortez"</span>,
+  <span class="property">role</span>: <span class="string">"Full Stack Developer"</span>,
+  <span class="property">focus</span>: [<span class="string">"Web"</span>, <span class="string">"Mobile"</span>, <span class="string">"DevOps"</span>],
+  <span class="property">available</span>: <span class="boolean">true</span>
+};</code></pre>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">Sobre Mim</h2>
+            <div class="section-header">
+                <span class="section-tag">&lt;sobre&gt;</span>
+                <h2 class="section-title">Conheça Minha Jornada</h2>
+                <p class="section-subtitle">Transformando ideias em soluções digitais de alto impacto</p>
+            </div>
             <div class="about-content">
-                <div class="about-text">
-                    <p>Desenvolvedor Full Stack com experiência prática em aplicações web e mobile, integrações com APIs externas, sistemas de pagamento e ERPs, além de automações que otimizam fluxos de vendas e controle de estoque.</p>
-
-                    <p>Atualmente atuo como Desenvolvedor Principal na Trade System, onde lidero a modernização de sistemas, implemento integrações que reduzem falhas manuais e desenvolvo soluções que aumentam a eficiência dos clientes em tempo real.</p>
-                    
-                    <p>Busco aplicar minhas habilidades em projetos desafiadores, com foco em inovação e impacto real para negócios.</p>
-                    
-                    <div class="about-info">
-                        <div class="info-item">
+                <div class="about-main">
+                    <div class="about-text">
+                        <p class="lead">
+                            Desenvolvedor Full Stack com sólida experiência no desenvolvimento de aplicações web, mobile e 
+                            integração de ecossistemas complexos (APIs, ERPs e sistemas de pagamento).
+                        </p>
+                        <p>
+                            <strong>Especialista em modernização de sistemas legados</strong> e automação de processos de negócio. 
+                            Recentemente, expandi minha atuação para a área de <strong>DevOps</strong>, implementando fluxos de 
+                            CI/CD e gerenciamento de infraestrutura em nuvem.
+                        </p>
+                        <p>
+                            Atualmente atuo como <strong>Desenvolvedor Principal na Trade System</strong>, onde lidero a 
+                            modernização de sistemas, implemento integrações que reduzem falhas manuais e desenvolvo 
+                            soluções que aumentam a eficiência dos clientes em tempo real.
+                        </p>
+                        <p class="highlight-text">
+                            <i class="fas fa-quote-left"></i>
+                            Foco em criar soluções escaláveis que geram impacto direto na eficiência operacional 
+                            e nos resultados de vendas.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-cards">
+                    <div class="info-card">
+                        <div class="info-icon">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Rio Grande, RS</span>
                         </div>
-                        <div class="info-item">
+                        <div class="info-content">
+                            <h4>Localização</h4>
+                            <p>Rio Grande, RS - Brasil</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
                             <i class="fas fa-phone"></i>
-                            <span>(+55) 53 98429-8460</span>
                         </div>
-                        <div class="info-item">
+                        <div class="info-content">
+                            <h4>Telefone</h4>
+                            <p>(+55) 53 98429-8460</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
                             <i class="fas fa-envelope"></i>
-                            <span>gui200cortez@gmail.com</span>
                         </div>
-                        <div class="info-item">
-                            <i class="fas fa-globe"></i>
-                            <span>Inglês (Intermediário)</span>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>gui200cortez@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Idiomas</h4>
+                            <p>Português (Nativo) • Inglês (Intermediário)</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <span class="section-tag closing">&lt;/sobre&gt;</span>
         </div>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Habilidades Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Linguagens de Programação</h3>
-                    <div class="skills-list">
-                        <span class="skill-badge">TypeScript</span>
-                        <span class="skill-badge">JavaScript</span>
-                        <span class="skill-badge">PHP</span>
-                        <span class="skill-badge">Python</span>
-                        <span class="skill-badge">Java</span>
-                    </div>
-                </div>
+            <div class="section-header">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Stack Tecnológico</h2>
+                <p class="section-subtitle">Ferramentas e tecnologias que utilizo no dia a dia</p>
+            </div>
+            
+            <div class="skills-tabs">
+                <button class="tab-btn active" data-tab="hard-skills">
+                    <i class="fas fa-code"></i>
+                    Hard Skills
+                </button>
+                <button class="tab-btn" data-tab="soft-skills">
+                    <i class="fas fa-users"></i>
+                    Soft Skills
+                </button>
+            </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-desktop"></i> Frontend</h3>
-                    <div class="skills-list">
-                        <span class="skill-badge">React</span>
-                        <span class="skill-badge">Next.js</span>
-                        <span class="skill-badge">Vite.js</span>
-                        <span class="skill-badge">HTML5</span>
-                        <span class="skill-badge">CSS3</span>
-                        <span class="skill-badge">Bootstrap</span>
+            <div class="tab-content active" id="hard-skills">
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-desktop"></i>
+                            </div>
+                            <h3>Frontend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>Next.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-bolt"></i>
+                                <span>Vite.js</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-mobile-alt"></i> Mobile</h3>
-                    <div class="skills-list">
-                        <span class="skill-badge">React Native</span>
-                        <span class="skill-badge">Expo</span>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Backend</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-code"></i>
+                                <span>Express</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-php"></i>
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-java"></i>
+                                <span>Java</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Backend</h3>
-                    <div class="skills-list">
-                        <span class="skill-badge">Node.js</span>
-                        <span class="skill-badge">PHP</span>
-                        <span class="skill-badge">APIs RESTful</span>
-                        <span class="skill-badge">JWT</span>
-                        <span class="skill-badge">ORM</span>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <h3>Mobile</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fab fa-react"></i>
+                                <span>React Native</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Expo</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Banco de Dados</h3>
-                    <div class="skills-list">
-                        <span class="skill-badge">MySQL</span>
-                        <span class="skill-badge">PostgreSQL</span>
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Banco de Dados</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>MySQL</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database"></i>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> Outras Tecnologias</h3>
-                    <div class="skills-list">
-                        <span class="skill-badge">OpenAI</span>
-                        <span class="skill-badge">Claude</span>
-                        <span class="skill-badge">Windows</span>
-                        <span class="skill-badge">Linux</span>
-                        <span class="skill-badge">Mac</span>
+                    <div class="skill-category highlight-category" data-aos="fade-up" data-aos-delay="400">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>DevOps & Infra</h3>
+                            <span class="new-badge">Expandindo</span>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fab fa-docker"></i>
+                                <span>Docker</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-server"></i>
+                                <span>VPS</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-server"></i>
+                                <span>Nginx</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-server"></i>
+                                <span>Apache</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-cog"></i>
+                                <span>PM2</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub Actions</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-linux"></i>
+                                <span>Linux</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="500">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-plug"></i>
+                            </div>
+                            <h3>Integrações</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp Bots</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-exchange-alt"></i>
+                                <span>RESTful APIs</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-store"></i>
+                                <span>Bling</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span>Nuvemshop</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-credit-card"></i>
+                                <span>Gateways de Pagamento</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="600">
+                        <div class="category-header">
+                            <div class="category-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>IA & Ferramentas</h3>
+                        </div>
+                        <div class="skills-list">
+                            <div class="skill-item">
+                                <i class="fas fa-brain"></i>
+                                <span>OpenAI API</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-robot"></i>
+                                <span>Claude</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-key"></i>
+                                <span>JWT</span>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-git-alt"></i>
+                                <span>Git/GitHub</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="soft-skills">
-                <h3>Soft Skills</h3>
+            <div class="tab-content" id="soft-skills">
                 <div class="soft-skills-grid">
-                    <div class="soft-skill">
-                        <i class="fas fa-clock"></i>
+                    <div class="soft-skill-card" data-aos="fade-up">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Comunicação</h4>
+                        <p>Comunicação clara e colaboração efetiva em equipes multidisciplinares.</p>
+                    </div>
+                    <div class="soft-skill-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-puzzle-piece"></i>
+                        </div>
+                        <h4>Resolução de Problemas</h4>
+                        <p>Foco em soluções complexas com análise de custo-benefício.</p>
+                    </div>
+                    <div class="soft-skill-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Autodidata</h4>
+                        <p>Facilidade para aprender novas tecnologias, especialmente Cloud/DevOps.</p>
+                    </div>
+                    <div class="soft-skill-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="soft-skill-icon">
+                            <i class="fas fa-tasks"></i>
+                        </div>
                         <h4>Gestão de Tempo</h4>
-                        <p>Habilidade de priorizar tarefas, manter a organização e cumprir prazos de forma eficaz.</p>
-                    </div>
-                    <div class="soft-skill">
-                        <i class="fas fa-lightbulb"></i>
-                        <h4>Solução de Problemas</h4>
-                        <p>Foco em encontrar soluções eficientes e criativas para desafios técnicos e de desenvolvimento.</p>
-                    </div>
-                    <div class="soft-skill">
-                        <i class="fas fa-users"></i>
-                        <h4>Trabalho em Equipe</h4>
-                        <p>Comunicação clara, colaboração eficaz e adaptação para trabalhar com diferentes perfis de equipes.</p>
-                    </div>
-                    <div class="soft-skill">
-                        <i class="fas fa-graduation-cap"></i>
-                        <h4>Aprendizado Contínuo</h4>
-                        <p>Interesse em novas tecnologias e disposição para aprender e aplicar novos conhecimentos rapidamente.</p>
+                        <p>Priorização baseada em impacto de negócio e cumprimento de prazos.</p>
                     </div>
                 </div>
             </div>
+            
+            <span class="section-tag closing">&lt;/skills&gt;</span>
         </div>
     </section>
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Experiência Profissional</h2>
+            <div class="section-header">
+                <span class="section-tag">&lt;experiência&gt;</span>
+                <h2 class="section-title">Trajetória Profissional</h2>
+                <p class="section-subtitle">Construindo soluções que fazem a diferença</p>
+            </div>
+            
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+                <div class="timeline-line"></div>
+                
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot">
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
                     <div class="timeline-content">
-                        <h3>Desenvolvedor Principal</h3>
-                        <h4>Trade System Informática</h4>
-                        <span class="timeline-date">2024 - Atual</span>
-                        <ul>
-                            <li>Desenvolvi integrações automáticas com Bling e Nuvemshop, permitindo atualização em tempo real de estoques e baixas de vendas.</li>
-                            <li>Implementei notificações push via Expo, ajudando clientes a se manterem informados sobre novidades e atualizações.</li>
-                            <li>Atuei na integração de diferentes maquininhas de cartão, conectando vendas diretamente ao sistema de gestão de estoque via aplicativos.</li>
-                            <li>Estruturei bot de WhatsApp para atendimento automático e identificação de clientes, melhorando a comunicação e a organização do suporte.</li>
-                            <li>Participei do desenvolvimento de um novo sistema web de controle de vendas e estoque, com design moderno e responsivo, substituindo o sistema desktop antigo.</li>
-                            <li>Implantei sistemas de feedback de clientes, possibilitando análise contínua de satisfação.</li>
-
-                        </ul>
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Desenvolvedor Principal</h3>
+                                <span class="company">Trade System Informática</span>
+                            </div>
+                            <div class="timeline-badge current">
+                                <i class="fas fa-calendar"></i>
+                                2024 - Atual
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <div class="achievement-list">
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h4>Módulo de CRM & Comunicação</h4>
+                                        <p>Desenvolvi e integrei um módulo de CRM completo ao sistema de gestão, para centralizar chats e gestão de leads diretamente na plataforma.</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-sync-alt"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h4>Integrações de E-commerce</h4>
+                                        <p>Implementei integrações automáticas com Bling e Nuvemshop, garantindo sincronização de estoque e vendas em tempo real.</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-rocket"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h4>Modernização de Stack</h4>
+                                        <p>Liderança na transição do sistema desktop para uma plataforma web moderna, responsiva e de alta performance.</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-server"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h4>Infraestrutura e Deploy</h4>
+                                        <p>Configuração de servidores VPS (Hostinger) com Docker, Nginx/Apache e PM2. Implementação de pipelines de CI/CD via GitHub Actions.</p>
+                                    </div>
+                                </div>
+                                <div class="achievement-item">
+                                    <div class="achievement-icon">
+                                        <i class="fas fa-mobile-alt"></i>
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h4>Pagamentos e Mobile</h4>
+                                        <p>Integração de PDVs (maquininhas) e desenvolvimento de apps mobile para otimização de vendas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tech-stack">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Docker</span>
+                                <span class="tech-tag">GitHub Actions</span>
+                                <span class="tech-tag">MySQL</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-marker">
+                        <div class="marker-dot military">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                    </div>
                     <div class="timeline-content">
-                        <h3>Alistamento Obrigatório</h3>
-                        <h4>Exército Brasileiro</h4>
-                        <span class="timeline-date">2023</span>
-                        <p>Durante meu ano de serviço militar, desenvolvi habilidades essenciais para o trabalho em equipe, liderança e disciplina, além de aprender a lidar com situações de pressão e tomar decisões rápidas.</p>
+                        <div class="timeline-header">
+                            <div class="timeline-title">
+                                <h3>Serviço Militar Obrigatório</h3>
+                                <span class="company">Exército Brasileiro</span>
+                            </div>
+                            <div class="timeline-badge">
+                                <i class="fas fa-calendar"></i>
+                                2023
+                            </div>
+                        </div>
+                        <div class="timeline-body">
+                            <p class="experience-description">
+                                Desenvolvimento de disciplina, resiliência e capacidade de tomada de decisão 
+                                sob pressão em ambientes críticos. Experiência que fortaleceu habilidades de 
+                                liderança e trabalho em equipe.
+                            </p>
+                            <div class="skills-gained">
+                                <span class="skill-tag"><i class="fas fa-users"></i> Trabalho em Equipe</span>
+                                <span class="skill-tag"><i class="fas fa-brain"></i> Disciplina</span>
+                                <span class="skill-tag"><i class="fas fa-bolt"></i> Decisões Rápidas</span>
+                                <span class="skill-tag"><i class="fas fa-chess"></i> Liderança</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            <span class="section-tag closing">&lt;/experiência&gt;</span>
         </div>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Formação</h2>
+            <div class="section-header">
+                <span class="section-tag">&lt;formação&gt;</span>
+                <h2 class="section-title">Formação Acadêmica</h2>
+                <p class="section-subtitle">Base sólida para inovação contínua</p>
+            </div>
+            
             <div class="education-grid">
-                <div class="education-item">
+                <div class="education-card current" data-aos="fade-up">
+                    <div class="education-status">
+                        <span class="status-badge active">
+                            <span class="pulse"></span>
+                            Cursando
+                        </span>
+                    </div>
                     <div class="education-icon">
                         <i class="fas fa-university"></i>
                     </div>
                     <div class="education-content">
                         <h3>Tecnólogo em Análise e Desenvolvimento de Sistemas</h3>
-                        <h4>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Campus Rio Grande</h4>
-                        <span class="education-date">2025 - 2027</span>
-                        <p>O curso visa aprofundar o conhecimento em desenvolvimento de sistemas, com ênfase em tecnologias de software, segurança, e soluções para plataformas móveis e web.</p>
+                        <h4>Instituto Federal do Rio Grande do Sul - Campus Rio Grande</h4>
+                        <div class="education-period">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2025 - 2027</span>
+                        </div>
+                        <p>Aprofundamento em desenvolvimento de sistemas, com ênfase em tecnologias de software, segurança, e soluções para plataformas móveis e web.</p>
                     </div>
                 </div>
-                <div class="education-item">
+
+                <div class="education-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="education-status">
+                        <span class="status-badge completed">
+                            <i class="fas fa-check"></i>
+                            Concluído
+                        </span>
+                    </div>
                     <div class="education-icon">
                         <i class="fas fa-graduation-cap"></i>
                     </div>
                     <div class="education-content">
-                        <h3>Técnico em Informática, Ensino Médio</h3>
-                        <h4>Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul - Campus Rio Grande</h4>
-                        <span class="education-date">2019 - 2024</span>
-                        <p>O curso de Técnico em Informática para Internet prepara os alunos para o desenvolvimento de programas e soluções web.</p>
+                        <h3>Técnico em Informática + Ensino Médio</h3>
+                        <h4>Instituto Federal do Rio Grande do Sul - Campus Rio Grande</h4>
+                        <div class="education-period">
+                            <i class="fas fa-calendar-alt"></i>
+                            <span>2019 - 2024</span>
+                        </div>
+                        <p>Formação técnica completa em desenvolvimento de sistemas e soluções web, com base sólida em programação e tecnologias da informação.</p>
                     </div>
                 </div>
             </div>
+
+            <div class="language-section" data-aos="fade-up">
+                <div class="language-card">
+                    <div class="language-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="language-content">
+                        <h4>Inglês - Intermediário</h4>
+                        <p>Modern English - 3 anos de estudo</p>
+                        <div class="language-skills">
+                            <span class="lang-badge">
+                                <i class="fas fa-book-reader"></i>
+                                Leitura Técnica Avançada
+                            </span>
+                            <span class="lang-badge">
+                                <i class="fas fa-comments"></i>
+                                Conversação Profissional
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <span class="section-tag closing">&lt;/formação&gt;</span>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Entre em Contato</h2>
+            <div class="section-header">
+                <span class="section-tag">&lt;contato&gt;</span>
+                <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+                <p class="section-subtitle">Estou disponível para novos projetos e oportunidades</p>
+            </div>
+            
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>gui200cortez@gmail.com</p>
-                        </div>
+                    <div class="contact-intro">
+                        <h3>Tem um projeto em mente?</h3>
+                        <p>Ficarei feliz em discutir como posso contribuir para o sucesso do seu negócio. Entre em contato!</p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Telefone</h3>
-                            <p>(+55) 53 98429-8460</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Localização</h3>
-                            <p>Rio Grande - RS</p>
+                    
+                    <div class="contact-cards">
+                        <a href="mailto:gui200cortez@gmail.com" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>Email</h4>
+                                <p>gui200cortez@gmail.com</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                        
+                        <a href="tel:+5553984298460" class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>Telefone / WhatsApp</h4>
+                                <p>(+55) 53 98429-8460</p>
+                            </div>
+                            <i class="fas fa-arrow-right contact-arrow"></i>
+                        </a>
+                        
+                        <div class="contact-card location">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-card-content">
+                                <h4>Localização</h4>
+                                <p>Rio Grande, RS - Brasil</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="social-links">
-                    <a href="https://www.linkedin.com/in/guilherme-oliveira-cortez/" target="_blank" class="social-link">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com/GuilhermeCortezz" target="_blank" class="social-link">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                    <a href="mailto:gui200cortez@gmail.com" class="social-link">
-                        <i class="fas fa-envelope"></i>
-                        <span>Email</span>
-                    </a>
+
+                <div class="contact-social">
+                    <h4>Me encontre nas redes</h4>
+                    <div class="social-grid">
+                        <a href="https://www.linkedin.com/in/guilherme-oliveira-cortez/" target="_blank" class="social-card linkedin">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                            <small>Conecte-se comigo</small>
+                        </a>
+                        <a href="https://github.com/GuilhermeCortezz" target="_blank" class="social-card github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                            <small>Veja meus projetos</small>
+                        </a>
+                    </div>
                 </div>
             </div>
+            
+            <span class="section-tag closing">&lt;/contato&gt;</span>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Guilherme Cortez. Todos os direitos reservados.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">Cortez</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">
+                    Desenvolvido por Guilherme Cortez
+                </p>
+                <p class="footer-copyright">
+                    &copy; 2026 Todos os direitos reservados.
+                </p>
+            </div>
         </div>
     </footer>
 
